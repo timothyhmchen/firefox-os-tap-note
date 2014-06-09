@@ -1,7 +1,7 @@
 Tap-Note
 =============
 
-Tap-Note is small app for writing down some thoughts with an image in Firefox OS.
+Tap-Note is a web application designed for Firefox OS to add quick notes with images.
 
 ![][1]
 [1]: http://i.imgur.com/eVOF6YR.jpg
@@ -17,4 +17,4 @@ See docs/index.html
 
 License
 -----
-Copyright © 2010 Timothy Hao-Ming Chen. See LICENSE for details.
+Copyright © 2014 Timothy Hao-Ming Chen. See LICENSE for details.
