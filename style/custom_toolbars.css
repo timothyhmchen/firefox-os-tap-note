@@ -1,0 +1,11 @@
+/**
+ * Oirginal toolbar overriding
+ */
+[role="toolbar"] {
+  background-color: #34495E;
+}
+
+button.action-icon:hover, button.media-icon:hover {
+  background-color: #67809F;
+}
+

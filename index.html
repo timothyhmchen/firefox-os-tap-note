@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+    <meta charset="utf-8">
+    <title>Tap Note</title>
+    <link rel="stylesheet" type="text/css" href="shared/style/input_areas.css" />
+    <link rel="stylesheet" type="text/css" href="shared/style/confirm.css" />
+
+    <link rel="stylesheet" type="text/css" href="style/brick-1.0.1.byob.min.css">
+    <link rel="stylesheet" type="text/css" href="style/lists.css">
+
+    <link rel="stylesheet" type="text/css" href="style/toolbars.css">
+    <link rel="stylesheet" type="text/css" href="style/icons/action_icons.css">
+    <link rel="stylesheet" type="text/css" href="style/icons/media_icons.css">
+
+    <link rel="stylesheet" type="text/css" href="style/custom_appbar.css">
+    <link rel="stylesheet" type="text/css" href="style/custom_lists.css">
+    <link rel="stylesheet" type="text/css" href="style/custom_toolbars.css">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="stylesheet" type="text/css" href="style/detail.css">
+  </head>
+
+  <body role="application">
+    <section id="note-table" role="region">
+      <header>
+        <x-appbar>
+          <button>=</button>
+          <h1>Tap Note</h1>
+          <button id="add">+</button>
+        </x-appbar>
+      </header>
+
+      <article id="note-list" data-type="list" class="scrollable">
+      </article>
+    </section>
+
+    <section id="note-detail" class="hidden" role="region">
+      <header>
+        <x-appbar>
+          <button id="cancel">Cancel</button>
+          <h1 id="appbar-title">New Note</h1>
+          <button id="save">Save</button>
+        </x-appbar>
+      </header>
+      <div id="note-area">
+        <input id="note-title" type="text" placeholder="Note">
+        <div class="separator centered"></div>
+        <textarea id="note-text" class="scrollable" placeholder="..."></textarea>
+        <div id="note-poster-frame" class="scrollable">
+          <img id="note-poster" class="centered" src="app://:0/"></img>
+        </div>
+      </div>
+      <div role="toolbar">
+        <ul>
+          <li><button id="delete" class="action-icon delete">Delete</button></li>
+        </ul>
+        <ul>
+          <li><button id="camera" class="media-icon camera">Camera</button></li>
+        </ul>
+      </div>
+      <form id="delete-dialog" class="hidden" role="dialog" data-type="confirm">
+        <section>
+          <h1>Confirmation</h1>
+          <p>Are you sure you want to delete this note?</p>
+        </section>
+        <menu>
+          <button id="cancel-delete">Cancel</button>
+          <button id="confirm-delete" class="danger">Delete</button>
+        </menu>
+      </form>
+    </section>
+
+    <script src="js/brick-1.0.1.byob.min.js"></script>
+
+    <script src="js/requests.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/indexeddb_util.js"></script>
+    <script src="js/activities.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
+

@@ -1,0 +1,26 @@
+{
+  "name": "Tap Note",
+  "version": "1.0.0",
+  "description": "Take a note by tapping.",
+  "launch_path": "/index.html",
+  "icons": {
+    "128": "/icons/icon-128.png"
+  },
+  "developer": {
+    "name": "Timothy Chen",
+    "url": "https://twitter.com/timothyhmchen"
+  },
+  "locales": {
+    "en": {
+      "name": "Tap Note"
+    }
+  },
+  "default_locale": "en",
+  "orientation": "portrait",
+  "permissions": {
+    "desktop-notification": {},
+    "geolocation": {
+      "description": "Used to locate me."
+    }
+  }
+}

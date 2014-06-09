@@ -1,0 +1,64 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  background-color: #fff;
+}
+
+body {
+  height: 100%;
+  display: block;
+  overflow: hidden;
+}
+
+section[role="region"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+}
+
+.hidden {
+  display: none;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.scrollable {
+  /* Fallback for browsers without support for calc(). */
+  height: 90%;
+  height: calc(100% - 45px);
+  overflow: auto !important;
+}
+
+.separator {
+  width: 94%;
+  height: 1px;
+  background: rgba(189, 195, 199, 0.8);
+}
+
+/**
+ * Hide the image if the note's poster haven't be set up yet.
+ */
+img[src="app://:0/"] {
+  display: none;
+}
+
+.centered {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.overflow-visible {
+  overflow: visible !important;
+}
+
+.border-top-radius {
+  border-radius: 3px 3px 0 0;
+}
+

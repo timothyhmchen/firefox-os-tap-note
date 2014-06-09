@@ -1,0 +1,27 @@
+#note-area {
+  height: 90%;
+  height: calc(100% - 45px - 4rem);
+}
+
+#note-title {
+  border: 0;
+}
+
+#note-text {
+  background: #fff;
+  border: 0;
+
+  max-height: 28rem;
+  height: 10rem;
+}
+
+#note-poster-frame {
+  margin-top: 4rem;
+  height: 20rem;
+  height: calc(100% - 14rem - 5rem);
+}
+
+#note-poster {
+  width: 94%;
+}
+
